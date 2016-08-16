@@ -1,0 +1,41 @@
+PODS:
+  - GPUImage (0.1.7)
+  - iOS-WebP (0.4):
+    - libwebp (~> 0.4.2)
+  - libwebp (0.4.4):
+    - libwebp/core (= 0.4.4)
+    - libwebp/dec (= 0.4.4)
+    - libwebp/demux (= 0.4.4)
+    - libwebp/dsp (= 0.4.4)
+    - libwebp/enc (= 0.4.4)
+    - libwebp/mux (= 0.4.4)
+    - libwebp/utils (= 0.4.4)
+    - libwebp/webp (= 0.4.4)
+  - libwebp/core (0.4.4):
+    - libwebp/webp
+  - libwebp/dec (0.4.4):
+    - libwebp/core
+  - libwebp/demux (0.4.4):
+    - libwebp/core
+  - libwebp/dsp (0.4.4):
+    - libwebp/core
+  - libwebp/enc (0.4.4):
+    - libwebp/core
+  - libwebp/mux (0.4.4):
+    - libwebp/core
+  - libwebp/utils (0.4.4):
+    - libwebp/core
+  - libwebp/webp (0.4.4)
+
+DEPENDENCIES:
+  - GPUImage (~> 0.1.7)
+  - iOS-WebP (~> 0.4)
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  iOS-WebP: 436d3c506b7587bdef926d1d1c76f8dbf3905edc
+  libwebp: 7d74f1ab887df77f23493ce115c9424fad5411b5
+
+PODFILE CHECKSUM: 2d40e48df483bbfef218c8729347ea7b89179438
+
+COCOAPODS: 1.0.1
