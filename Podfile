@@ -5,7 +5,6 @@ workspace 'ThumbToBlur.xcworkspace'
 target "ThumbToBlur" do
 	project "ThumbToBlur/ThumbToBlur"
 	pod 'GPUImage', '~> 0.1.7'
-	pod 'iOS-WebP', '~> 0.4'
 end
 
 target "ThumbToBlurDemo" do
