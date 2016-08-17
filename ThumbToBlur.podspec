@@ -24,10 +24,11 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  #s.description  = <<-DESC
-  #                 Make a thumb image to big and blur image. 
-  #                 The thumb image is small then the blur image. This will fast your network.
-
+  s.description  = <<-DESC
+	*Make a thumb image to big and blur image. 
+  *The thumb image is small then the blur image. This will fast your network.
+  *Base On GPUImage
+  										DESC
   s.homepage     = "https://github.com/caojianfeng/ThumbToBlur"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -133,6 +134,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "GPUImage", "~> 0.1.7"
+  s.dependency "GPUImage"
 
 end
