@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#define DEBUG false
+
 @interface ViewController ()
 
 @end
