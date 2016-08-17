@@ -14,7 +14,7 @@
     //或者用地址[[GPUImagePicture alloc] initWithURL:inputImageURL];
     
     GPUImageGaussianBlurFilter * gbFilter = [[GPUImageGaussianBlurFilter alloc] init];
-    gbFilter.blurRadiusInPixels = 64.0;
+    gbFilter.blurRadiusInPixels = blurRadius;
     blurFilter = gbFilter;
     
     GPUImageView *primaryView = [[GPUImageView alloc] initWithFrame:viewFrame];
