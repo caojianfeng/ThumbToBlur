@@ -7,9 +7,6 @@
 //
 
 #import "ThumbToBlurHandler.h"
-#ifndef DEBUG
-#define DEBUG false
-#endif
 
 @implementation ThumbToBlurHandler
 -(GPUImageView*)createViewWithFrame:(CGRect)viewFrame withImage:(UIImage*)inputImage withRadius:(int)blurRadius{
@@ -29,9 +26,7 @@
 }
 
 -(void)startBlur:(void (^)(void))completion{
-    if(DEBUG){
-        NSLog(@"startBlur");
-    }
+    
     if(!sourcePicture){
         NSLog(@"createViewWithFrame first!");
         return;

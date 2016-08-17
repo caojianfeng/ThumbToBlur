@@ -20,25 +20,17 @@
     //http://i1.piimg.com/565547/b8c23a33e65390bf.jpg
     UIImage *inputImage = [UIImage imageNamed:@"test.webp"];
     if(!inputImage){
-        if(DEBUG){
-            NSLog(@"image 'test.webp' not found");
-        }
+        NSLog(@"image 'test.webp' not found");
         inputImage = [UIImage imageNamed:@"test.jpg"];
         if(!inputImage){
-            if(DEBUG){
-                NSLog(@"image 'test.jpg' not found");
-            }
+            NSLog(@"image 'test.jpg' not found");
             return nil;
         }else{
-            if(DEBUG){
-                NSLog(@"using image 'test.jpg'");
-            }
+            NSLog(@"using image 'test.jpg'");
             return inputImage;
         }
     }else{
-        if(DEBUG){
-            NSLog(@"using image 'test.webp'");
-        }
+        NSLog(@"using image 'test.webp'");
         return inputImage;
     }
 }
@@ -85,26 +77,19 @@
 //按钮响事件函数
 
 -(void)button:(UIButton *)sender{
-    
     long begin = [[NSDate date] timeIntervalSince1970] * 1000;
-    if(DEBUG){
-        NSLog(@"begin %ld" , begin);
-    }
+    NSLog(@"begin %ld" , begin);
 
     [thumbToBlurHandler startBlur:^(void){
         long end =  [[NSDate date] timeIntervalSince1970] * 1000;
         long use = end - begin;
         NSString * txt = [NSString stringWithFormat:@"耗时%ldms",use];
-        if(DEBUG){
-            NSLog(@"end  %ld , %@" , end,txt);
-        }
+        NSLog(@"end  %ld , %@" , end,txt);
+        
         dispatch_sync(dispatch_get_main_queue(), ^{
             [self updateInfo:txt];
         });
-        if(DEBUG){
-            NSLog(@"set txt");
-        }
-        
+        NSLog(@"set txt");
     }];
     [self updateInfo:@"processing ..."];
 }
