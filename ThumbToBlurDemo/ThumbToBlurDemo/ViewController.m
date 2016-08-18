@@ -115,6 +115,9 @@
     }
     UIImage * inputImage = [self createUIImage];
     CGRect viewFrame = [self countFrame];
+
+    NSLog(@"image size = (%d,%d)" , (int)(viewFrame.size.width) , (int)(viewFrame.size.height));
+
     GPUImageView *imgView = [thumbToBlurHandler createViewWithFrame:viewFrame withImage:inputImage withRadius:64];
     self.view = imgView;
 }
